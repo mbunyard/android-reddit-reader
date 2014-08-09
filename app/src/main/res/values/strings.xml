@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General -->
+    <string name="app_name">Reddit Reader</string>
+
+    <!-- Action Bar -->
+    <string name="action_refresh">Refresh</string>
+
+    <!-- Topic List -->
+    <string name="placeholder_topic_list">Topic List</string>
+
+    <!-- Detail View -->
+
+</resources>
