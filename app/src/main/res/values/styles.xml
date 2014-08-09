@@ -1,9 +1,12 @@
 <resources>
 
     <!-- Base Theme -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light">
+    <style name="AppTheme" parent="Theme.Reddit">
 
 
     </style>
+
+    <!-- Action Bar Style Generator -->
+    <!-- http://jgilfelt.github.io/android-actionbarstylegenerator/#name=reddit&compat=appcompat&theme=light&actionbarstyle=solid&texture=0&hairline=0&neutralPressed=1&backColor=cee3f8%2C100&secondaryColor=D6D6D6%2C100&tabColor=cee3f8%2C100&tertiaryColor=F2F2F2%2C100&accentColor=cee3f8%2C100&cabBackColor=FFFFFF%2C100&cabHighlightColor=cee3f8%2C100 -->
 
 </resources>
