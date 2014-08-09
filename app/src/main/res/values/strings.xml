@@ -2,7 +2,10 @@
 <resources>
 
     <!-- General -->
-    <string name="app_name">Reddit Reader</string>
+    <!-- Started with "reddit Reader", but after reading
+         reddit Licensing (http://www.reddit.com/wiki/licensing),
+         app name was changed to "Reader for reddit" -->
+    <string name="app_name">Reader for reddit</string>
 
     <!-- Action Bar -->
     <string name="action_refresh">Refresh</string>
