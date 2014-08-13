@@ -30,4 +30,13 @@ dependencies {
     // Android Support libraries
     // http://developer.android.com/tools/support-library/features.html
     compile 'com.android.support:appcompat-v7:19.+'
+
+    // Square's OkHttp library
+    // http://square.github.io/okhttp/
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.0.0'
+    compile 'com.squareup.okhttp:okhttp:2.0.0'
+
+    // Square's Retrofit library
+    // http://square.github.io/retrofit/
+    compile 'com.squareup.retrofit:retrofit:1.6.+'
 }

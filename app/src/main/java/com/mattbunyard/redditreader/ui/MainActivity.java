@@ -1,19 +1,26 @@
-package com.mattbunyard.redditreader;
+package com.mattbunyard.redditreader.ui;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.mattbunyard.redditreader.R;
+import com.mattbunyard.redditreader.sync.SyncUtil;
+
 
 public class MainActivity extends ActionBarActivity {
+
+    public static final String TAG = MainActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
 
+        // Ensure default (no user credentials) account is created.
+        SyncUtil.CreateSyncAccount(this);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -29,6 +36,8 @@ public class MainActivity extends ActionBarActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
         if (id == R.id.action_refresh) {
+            // Update stories.
+            SyncUtil.refreshData();
             return true;
         }
         return super.onOptionsItemSelected(item);
